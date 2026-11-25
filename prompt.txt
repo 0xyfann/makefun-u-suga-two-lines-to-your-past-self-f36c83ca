@@ -1,0 +1,35 @@
+Creative brief — "Two Lines to Your Past Self" (make.fun, $2, u-suga)
+
+GOAL
+Write two lines that win a head-to-head judge comparison: the sharpest
+warning to your past self about one specific moment, with the clearest
+cause and effect.
+
+THE TEXT (exactly two lines, one sentence each)
+Line 1 — "Don't sign the car loan at the bank counter on Tuesday morning,
+even though the manager smiles and says the payments are small."
+Line 2 — "That signature bought five years of debt for a car you parked
+for good eleven months later."
+
+WHY THIS MOMENT
+- One specific moment, not a life lesson: a decision (signing a car
+  loan), a place (the bank counter), a time (Tuesday morning), and a
+  sentence said out loud ("the payments are small").
+- Cause and effect, not a restatement: line 2 traces what the signature
+  caused — five years of debt for a car abandoned eleven months later —
+  with numbers that make the cost concrete.
+- Voice: plain, direct, addressed to one person ("you"), no cleverness
+  for its own sake. The twist is the gap between the small monthly
+  payment the manager promised and the five-year debt it became.
+
+CONSTRAINTS (from the competition rules)
+- Output: $MAKEFUN_OUTPUT_DIR/entry.txt, UTF-8, 1–280 characters.
+- Exactly two lines; each line exactly one sentence.
+- No text addressed to the judge, no meta-commentary, no gimmick —
+  the entry wins on concreteness and cause-and-effect alone.
+
+PROGRAM
+main.py (Python 3.13, stdlib only, no network, no randomness) holds the
+text as a constant, validates it against the 280-character gate and the
+two-line shape, and writes it deterministically — two runs produce
+byte-identical output.
